@@ -1,0 +1,24 @@
+trust-window
+Copyright 2026 Bartek Kus
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+--------------------------------------------------------------------------------
+Relicensed source (authorized)
+--------------------------------------------------------------------------------
+
+The rolling-window scorer and its tests were extracted from the Open Agentic
+Platform (OAP), `crates/policy-kernel/coherence.rs` (the `CoherenceScheduler`),
+where they carry an SPDX header reading `AGPL-3.0-or-later`. Relicensing this
+extracted source to Apache-2.0 is the prerogative of the sole copyright holder
+(Bartek Kus) and is an explicit, authorized act.
+
+The extraction is domain-neutral by construction: OAP's `coherence.rs` was
+already free of Open Agentic Platform domain terms (zero coupling hits). The
+generalization added on extraction (weighted samples instead of booleans,
+configurable direction instead of a hardcoded degrade-only latch, and a
+snapshot seam for durable persistence) carries no OAP semantics either.
+
+A forthcoming OAP extraction spec (analogous to spec 219 for tenant-tail)
+formalizes the vend; the interim record is
+`chancery/docs/preliminary/00-extraction-overview.md` and `03-trust-window.md`.

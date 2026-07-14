@@ -1,0 +1,46 @@
+# trust-window: a rolling-window trust scorer that maps a stream of weighted
+# samples to a graduated privilege level. Single-crate library.
+#
+# Extracted (relicensed Apache-2.0 by the sole copyright holder) from the Open
+# Agentic Platform's crates/policy-kernel (coherence.rs), where it was the
+# CoherenceScheduler. The extraction generalizes its direction (OAP's
+# degrade-only latch becomes configurable bidirectional promote/demote) and its
+# input (booleans become weighted samples), and adds a snapshot seam so a
+# consumer can persist and rehydrate per-subject windows. See NOTICE.
+#
+# Governed by this repo's OWN specs/ corpus, compiled by the pinned spec-spine
+# library (the dogfooding pattern spec-spine, tenant-emit, tenant-tail, and
+# canonical-keysort-json all follow).
+
+[package]
+name = "trust-window"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "Apache-2.0"
+repository = "https://github.com/stagecraft-ing/trust-window"
+homepage = "https://github.com/stagecraft-ing/trust-window"
+description = "Rolling-window trust scorer: a stream of weighted samples maps to a graduated privilege level, degrade-only or bidirectional, deterministic and snapshot-persistable."
+authors = ["The trust-window Authors"]
+keywords = ["trust", "scoring", "rolling-window", "privilege", "governance"]
+categories = ["algorithms", "data-structures"]
+readme = "README.md"
+# Ship only the essentials in the published tarball, not the repo governance.
+include = ["src/**", "Cargo.toml", "README.md", "LICENSE", "NOTICE", "CHANGELOG.md"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+
+# Root package is a workspace-of-one so the forbid-unsafe lint applies and
+# spec-spine indexes this repo as a Cargo workspace.
+[workspace]
+resolver = "2"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[lints]
+workspace = true
+
+[package.metadata.trust-window]
+spec = "000-trust-window-bootstrap"
