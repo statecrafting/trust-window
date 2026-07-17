@@ -54,7 +54,7 @@ insertion order, not by time.
 
 ## Ecosystem
 
-Part of the `stagecraft-ing` reusable-primitive family, extracted from the Open
+Part of the `statecrafting` reusable-primitive family, extracted from the Open
 Agentic Platform (`crates/policy-kernel/coherence.rs`) and relicensed Apache-2.0
 by the sole copyright holder (see `NOTICE`). This repo is self-governed by its
 own `specs/` corpus, compiled by the pinned `spec-spine` library.

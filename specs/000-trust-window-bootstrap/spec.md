@@ -32,7 +32,7 @@ references:
 
 ## 1. Purpose
 
-trust-window is the run-time trust-scoring primitive of the `stagecraft-ing`
+trust-window is the run-time trust-scoring primitive of the `statecrafting`
 reusable-primitive family. It answers one question deterministically: given a
 window of graded observations about a subject's behavior, what privilege level
 should it hold right now? The scorer is pure (no wall clock) and its state is

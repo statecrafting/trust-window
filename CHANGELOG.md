@@ -26,4 +26,4 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   degrade-only latch becomes configurable direction, and a snapshot seam is
   added. See `NOTICE`.
 
-[0.1.0]: https://github.com/stagecraft-ing/trust-window/releases/tag/v0.1.0
+[0.1.0]: https://github.com/statecrafting/trust-window/releases/tag/v0.1.0
