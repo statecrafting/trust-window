@@ -1,7 +1,7 @@
 ---
 id: "000-trust-window-bootstrap"
 title: "trust-window bootstrap (rolling-window trust scorer)"
-status: draft
+status: approved
 created: "2026-07-14"
 authors: ["trust-window"]
 kind: tooling
@@ -92,3 +92,8 @@ makes the latch configurable, so a bidirectional autonomy ladder can promote;
 (3) `WindowSnapshot` lets a consumer persist and rehydrate per-subject windows.
 OAP re-consumes this as `Direction::DegradeOnly` with `Sample::aligned`, and its
 coherence tests are the regression guard.
+
+## Owner ratification
+
+2026-10-02: Ratified under the owner's explicit fleet-upgrade instruction.
+Implementation lifecycle is unchanged by this approval.

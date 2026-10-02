@@ -1,0 +1,61 @@
+{
+  "record": {
+    "authors": [
+      "trust-window"
+    ],
+    "created": "2026-07-14",
+    "establishes": [
+      {
+        "kind": "file",
+        "path": "Cargo.toml"
+      },
+      {
+        "kind": "file",
+        "path": "src/lib.rs"
+      },
+      {
+        "kind": "file",
+        "path": "src/config.rs"
+      },
+      {
+        "kind": "file",
+        "path": "src/scorer.rs"
+      }
+    ],
+    "id": "000-trust-window-bootstrap",
+    "implementation": "pending",
+    "kind": "tooling",
+    "references": [
+      {
+        "role": "context",
+        "unit": {
+          "kind": "file",
+          "path": "README.md"
+        }
+      },
+      {
+        "role": "context",
+        "unit": {
+          "kind": "file",
+          "path": "NOTICE"
+        }
+      }
+    ],
+    "risk": "low",
+    "sectionHeadings": [
+      "000: trust-window bootstrap",
+      "1. Purpose",
+      "2. Scope",
+      "3. Provenance",
+      "4. Established units",
+      "5. Notes on the generalization",
+      "Owner ratification"
+    ],
+    "specPath": "specs/000-trust-window-bootstrap/spec.md",
+    "status": "approved",
+    "summary": "Bootstrap spec for the trust-window repository: a single-crate rolling-window trust scorer that maps a stream of weighted samples to a graduated privilege level, degrade-only or bidirectional, deterministic and snapshot-persistable. Extracted (relicensed Apache-2.0 by the sole copyright holder) from the Open Agentic Platform's crates/policy-kernel/coherence.rs (CoherenceScheduler), generalizing booleans to weighted samples and the degrade-only latch to a configurable direction, and adding a snapshot seam. This spec establishes the crate skeleton and seeds this repo's own spec corpus, governed by the pinned spec-spine library.\n",
+    "title": "trust-window bootstrap (rolling-window trust scorer)"
+  },
+  "shardHash": "d90726d6220d12caf1aec206c423f3fbec1b5de5f0d58b1af766e9efc2fcfe27",
+  "specVersion": "1.1.0"
+}

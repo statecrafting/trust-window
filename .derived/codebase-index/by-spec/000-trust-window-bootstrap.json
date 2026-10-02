@@ -1,0 +1,118 @@
+{
+  "mapping": {
+    "implementingPaths": [
+      {
+        "path": "",
+        "source": "manifest-metadata"
+      },
+      {
+        "path": "Cargo.toml",
+        "source": "spec-edge"
+      },
+      {
+        "path": "NOTICE",
+        "source": "spec-edge"
+      },
+      {
+        "path": "README.md",
+        "source": "spec-edge"
+      },
+      {
+        "path": "src/config.rs",
+        "source": "spec-edge"
+      },
+      {
+        "path": "src/lib.rs",
+        "source": "spec-edge"
+      },
+      {
+        "path": "src/scorer.rs",
+        "source": "spec-edge"
+      }
+    ],
+    "resolvedUnits": [
+      {
+        "locations": [
+          {
+            "file": "Cargo.toml"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "Cargo.toml"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "src/config.rs"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "src/config.rs"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "src/lib.rs"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "src/lib.rs"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "src/scorer.rs"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "src/scorer.rs"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "NOTICE"
+          }
+        ],
+        "ownership": false,
+        "sourceField": "references",
+        "unit": {
+          "kind": "file",
+          "path": "NOTICE"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "README.md"
+          }
+        ],
+        "ownership": false,
+        "sourceField": "references",
+        "unit": {
+          "kind": "file",
+          "path": "README.md"
+        }
+      }
+    ],
+    "specId": "000-trust-window-bootstrap",
+    "specStatus": "approved"
+  },
+  "schemaVersion": "1.1.0",
+  "shardHash": "1e9199e41254277be429a88f8e7623d611390045f44025b7912a03b9b3a13fb8"
+}

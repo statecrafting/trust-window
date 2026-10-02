@@ -1,0 +1,12 @@
+{
+  "package": {
+    "edition": "2024",
+    "kind": "rust-lib",
+    "name": "trust-window",
+    "path": "",
+    "specRef": "000-trust-window-bootstrap",
+    "version": "0.1.0"
+  },
+  "schemaVersion": "1.1.0",
+  "shardHash": "e5fd6bff2b8bc6990cbf963bd98ab8eaabf736434bd670ec61aa03a313f8f29a"
+}
