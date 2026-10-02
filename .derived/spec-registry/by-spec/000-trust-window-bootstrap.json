@@ -6,6 +6,42 @@
     "created": "2026-07-14",
     "establishes": [
       {
+        "kind": "directory",
+        "path": "standards/spec/"
+      },
+      {
+        "kind": "file",
+        "path": "spec-spine.toml"
+      },
+      {
+        "kind": "file",
+        "path": "AGENTS.md"
+      },
+      {
+        "kind": "file",
+        "path": "Makefile"
+      },
+      {
+        "kind": "file",
+        "path": ".github/CODEOWNERS"
+      },
+      {
+        "kind": "file",
+        "path": ".github/workflows/statecraft-ai-review.yml"
+      },
+      {
+        "kind": "file",
+        "path": ".github/workflows/statecraft-ci.yml"
+      },
+      {
+        "kind": "directory",
+        "path": ".statecraft/"
+      },
+      {
+        "kind": "directory",
+        "path": "scripts/statecraft/"
+      },
+      {
         "kind": "file",
         "path": "Cargo.toml"
       },
@@ -42,6 +78,16 @@
       }
     ],
     "risk": "low",
+    "sectionDigests": {
+      "000-trust-window-bootstrap": "e61af6046f313b7a6a0ba13e45027a4c50b4c1955ef1a52592402e6abc9f0811",
+      "1-purpose": "31fa2a0e03e7886d2fe26d71d1b671be6fe87e30ca98141e36c2bf25ff8104c8",
+      "2-scope": "7cd903c20c4477a33e9386a190d08283d0df70bfa4c53be587cbe692b7446889",
+      "3-provenance": "bede1d4821264a906005b1388e7d01f25eac669abaf2b4b42f7d6ce283306e31",
+      "4-established-units": "daeb58e3eea2ecca2407dbd7935a822ff7d0e66c82a89b5b003155ddd3ed45ef",
+      "5-notes-on-the-generalization": "dcedeba1d03a0c296997abfdd0195d75ca01ea40974251445c0ddf2ac11958c4",
+      "managed-governance-enrollment-2026-10-02": "9d6e5178ee0775320cbb70eedf3c69d7bf9da11227c7db4b09ff06a51ab61271",
+      "owner-ratification": "f59e2098142baf4a48deab71043545d12393424fc5aba55f2ad3729f498eb784"
+    },
     "sectionHeadings": [
       "000: trust-window bootstrap",
       "1. Purpose",
@@ -49,13 +95,14 @@
       "3. Provenance",
       "4. Established units",
       "5. Notes on the generalization",
-      "Owner ratification"
+      "Owner ratification",
+      "Managed governance enrollment (2026-10-02)"
     ],
     "specPath": "specs/000-trust-window-bootstrap/spec.md",
     "status": "approved",
     "summary": "Bootstrap spec for the trust-window repository: a single-crate rolling-window trust scorer that maps a stream of weighted samples to a graduated privilege level, degrade-only or bidirectional, deterministic and snapshot-persistable. Extracted (relicensed Apache-2.0 by the sole copyright holder) from the Open Agentic Platform's crates/policy-kernel/coherence.rs (CoherenceScheduler), generalizing booleans to weighted samples and the degrade-only latch to a configurable direction, and adding a snapshot seam. This spec establishes the crate skeleton and seeds this repo's own spec corpus, governed by the pinned spec-spine library.\n",
     "title": "trust-window bootstrap (rolling-window trust scorer)"
   },
-  "shardHash": "d90726d6220d12caf1aec206c423f3fbec1b5de5f0d58b1af766e9efc2fcfe27",
-  "specVersion": "1.1.0"
+  "shardHash": "e68d72af14bc49c0ef9f571a7d38cc8bc03c790a8359bb8f6f010feb7ad84e97",
+  "specVersion": "1.9.0"
 }

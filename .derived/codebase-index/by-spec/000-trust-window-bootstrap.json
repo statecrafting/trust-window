@@ -6,15 +6,39 @@
         "source": "manifest-metadata"
       },
       {
+        "path": ".github/CODEOWNERS",
+        "source": "spec-edge"
+      },
+      {
+        "path": ".github/workflows/statecraft-ai-review.yml",
+        "source": "spec-edge"
+      },
+      {
+        "path": ".github/workflows/statecraft-ci.yml",
+        "source": "spec-edge"
+      },
+      {
+        "path": ".statecraft/",
+        "source": "spec-edge"
+      },
+      {
+        "path": "AGENTS.md",
+        "source": "spec-edge"
+      },
+      {
         "path": "Cargo.toml",
         "source": "spec-edge"
       },
       {
-        "path": "NOTICE",
+        "path": "Makefile",
         "source": "spec-edge"
       },
       {
-        "path": "README.md",
+        "path": "scripts/statecraft/",
+        "source": "spec-edge"
+      },
+      {
+        "path": "spec-spine.toml",
         "source": "spec-edge"
       },
       {
@@ -28,9 +52,104 @@
       {
         "path": "src/scorer.rs",
         "source": "spec-edge"
+      },
+      {
+        "path": "standards/spec/",
+        "source": "spec-edge"
       }
     ],
     "resolvedUnits": [
+      {
+        "locations": [
+          {
+            "file": ".statecraft/"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "directory",
+          "path": ".statecraft/"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "scripts/statecraft/"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "directory",
+          "path": "scripts/statecraft/"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "standards/spec/"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "directory",
+          "path": "standards/spec/"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": ".github/CODEOWNERS"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": ".github/CODEOWNERS"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": ".github/workflows/statecraft-ai-review.yml"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": ".github/workflows/statecraft-ai-review.yml"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": ".github/workflows/statecraft-ci.yml"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": ".github/workflows/statecraft-ci.yml"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "AGENTS.md"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "AGENTS.md"
+        }
+      },
       {
         "locations": [
           {
@@ -42,6 +161,32 @@
         "unit": {
           "kind": "file",
           "path": "Cargo.toml"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "Makefile"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "Makefile"
+        }
+      },
+      {
+        "locations": [
+          {
+            "file": "spec-spine.toml"
+          }
+        ],
+        "ownership": true,
+        "sourceField": "establishes",
+        "unit": {
+          "kind": "file",
+          "path": "spec-spine.toml"
         }
       },
       {
@@ -113,6 +258,6 @@
     "specId": "000-trust-window-bootstrap",
     "specStatus": "approved"
   },
-  "schemaVersion": "1.1.0",
-  "shardHash": "1e9199e41254277be429a88f8e7623d611390045f44025b7912a03b9b3a13fb8"
+  "schemaVersion": "1.2.0",
+  "shardHash": "e68d72af14bc49c0ef9f571a7d38cc8bc03c790a8359bb8f6f010feb7ad84e97"
 }
